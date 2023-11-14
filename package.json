@@ -1,34 +1,34 @@
 {
-	"name": "now-simple-list",
-	"version": "0.0.1",
-	"private": false,
-	"description": "a simple list widget",
-	"keywords": [
-		"ServiceNow",
-		"Now Experience UI Component",
-		"now-simple-list"
-	],
-	"readme": "./README.md",
-	"engines": {
-		"node": ">=8.6.0",
-		"npm": ">=5.3.0"
-	},
-	"module": "src/index.js",
-	"scripts": {
-		"format": "prettier . --fix"
-	},
-	"dependencies": {
-		"@servicenow/ui-core": "quebec",
-		"@servicenow/ui-renderer-snabbdom": "quebec",
-		"@servicenow/cli-archetype": "24.0.0",
-		"@servicenow/cli-component-archetype": "24.0.0",
-		"@servicenow/sass-theme": "quebec",
-		"@servicenow/sass-kit": "quebec",
-		"@servicenow/library-translate": "quebec"
-	},
-	"devDependencies": {
-		"@servicenow/cli-archetype-dev": "24.0.0",
-		"@servicenow/cli-component-archetype-dev": "24.0.0",
-		"prettier": "2.8.8"
-	}
+  "name": "now-simple-list",
+  "version": "0.0.1",
+  "private": false,
+  "description": "a simple list widget",
+  "keywords": [
+    "ServiceNow",
+    "Now Experience UI Component",
+    "now-simple-list"
+  ],
+  "readme": "./README.md",
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">=5.3.0"
+  },
+  "module": "src/index.js",
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "@servicenow/ui-core": "quebec",
+    "@servicenow/ui-renderer-snabbdom": "quebec",
+    "@servicenow/cli-archetype": "24.0.0",
+    "@servicenow/cli-component-archetype": "24.0.0",
+    "@servicenow/sass-theme": "quebec",
+    "@servicenow/sass-kit": "quebec",
+    "@servicenow/library-translate": "quebec"
+  },
+  "devDependencies": {
+    "@servicenow/cli-archetype-dev": "24.0.0",
+    "@servicenow/cli-component-archetype-dev": "24.0.0",
+    "prettier": "2.8.8"
+  }
 }
