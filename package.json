@@ -25,6 +25,7 @@
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "24.0.0",
-		"@servicenow/cli-component-archetype-dev": "24.0.0"
+		"@servicenow/cli-component-archetype-dev": "24.0.0",
+		"prettier": "3.1.0"
 	}
 }
