@@ -28,6 +28,7 @@
     "@servicenow/library-translate": "quebec"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "7.23.3",
     "@servicenow/cli-archetype-dev": "24.0.0",
     "@servicenow/cli-component-archetype-dev": "24.0.0",
     "eslint": "7.32.0",
