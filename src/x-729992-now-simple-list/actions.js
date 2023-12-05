@@ -4,6 +4,7 @@ import {
 	FETCH_DATA_FAILED,
 	FETCH_DATA_SUCCEEDED,
 } from "../constants";
+import { createHttpEffect } from "@servicenow/ui-effect-http";
 
 const { COMPONENT_BOOTSTRAPPED } = actionTypes;
 
@@ -14,13 +15,20 @@ const actions = {
 
 		dispatch(FETCH_DATA, {
 			table: table,
-			fields: fields,
+			fields: fields.join(","),
 		});
 	},
-	[FETCH_DATA]: ({ action }) => {
-		console.log(`FETCH_DATA: ${JSON.stringify(action)}`);
+	[FETCH_DATA]: createHttpEffect("/api/now/table/:table", {
+		method: "GET",
+		pathParams: ["table"],
+		successActionType: FETCH_DATA_SUCCEEDED,
+		// errorActionType: FETCH_DATA_FAILED,
+	}),
+	[FETCH_DATA_SUCCEEDED]: ({ action }) => {
+		console.log(`FETCH_DATA_SUCCEEDED: ${JSON.stringify(action)}`);
 	},
-	[FETCH_DATA_SUCCEEDED]: ({ action }) => {},
-	[FETCH_DATA_FAILED]: ({ action }) => {},
+	[FETCH_DATA_FAILED]: ({ action }) => {
+		console.log(`FETCH_DATA_FAILED: ${JSON.stringify(action)}`);
+	},
 };
 export default actions;

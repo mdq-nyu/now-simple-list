@@ -1,6 +1,7 @@
 {
   "development": {
     "proxy": {
+      "origin": "https://dev60968.service-now.com",
       "proxies": ["/api"]
     }
   },
