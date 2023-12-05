@@ -2,7 +2,7 @@ import { createCustomElement } from "@servicenow/ui-core";
 import snabbdom from "@servicenow/ui-renderer-snabbdom";
 import styles from "./styles.scss";
 
-const view = (state, { updateState }) => {
+const view = () => {
 	return (
 		<div>
 			<h1>Hello World!</h1>

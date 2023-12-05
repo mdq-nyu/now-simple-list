@@ -1,30 +1,39 @@
 {
-	"name": "now-simple-list",
-	"version": "0.0.1",
-	"private": false,
-	"description": "a simple list widget",
-	"keywords": [
-		"ServiceNow",
-		"Now Experience UI Component",
-		"now-simple-list"
-	],
-	"readme": "./README.md",
-	"engines": {
-		"node": ">=8.6.0",
-		"npm": ">=5.3.0"
-	},
-	"module": "src/index.js",
-	"dependencies": {
-		"@servicenow/ui-core": "quebec",
-		"@servicenow/ui-renderer-snabbdom": "quebec",
-		"@servicenow/cli-archetype": "24.0.0",
-		"@servicenow/cli-component-archetype": "24.0.0",
-		"@servicenow/sass-theme": "quebec",
-		"@servicenow/sass-kit": "quebec",
-		"@servicenow/library-translate": "quebec"
-	},
-	"devDependencies": {
-		"@servicenow/cli-archetype-dev": "24.0.0",
-		"@servicenow/cli-component-archetype-dev": "24.0.0"
-	}
+  "name": "now-simple-list",
+  "version": "0.0.1",
+  "private": false,
+  "description": "a simple list widget",
+  "keywords": [
+    "ServiceNow",
+    "Now Experience UI Component",
+    "now-simple-list"
+  ],
+  "readme": "./README.md",
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">=5.3.0"
+  },
+  "module": "src/index.js",
+  "scripts": {
+    "format": "prettier . --write",
+    "lint": "eslint src --fix",
+    "ci": "prettier . --check && eslint src"
+  },
+  "dependencies": {
+    "@servicenow/ui-core": "quebec",
+    "@servicenow/ui-renderer-snabbdom": "quebec",
+    "@servicenow/cli-archetype": "24.0.0",
+    "@servicenow/cli-component-archetype": "24.0.0",
+    "@servicenow/sass-theme": "quebec",
+    "@servicenow/sass-kit": "quebec",
+    "@servicenow/library-translate": "quebec"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.23.3",
+    "@servicenow/cli-archetype-dev": "24.0.0",
+    "@servicenow/cli-component-archetype-dev": "24.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "9.0.0",
+    "prettier": "2.8.8"
+  }
 }
