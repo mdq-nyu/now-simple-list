@@ -1,1 +1,5 @@
 // event names go here
+
+export const FETCH_DATA = "SIMPLE#FETCH_DATA";
+export const FETCH_DATA_SUCCEEDED = "SIMPLE#FETCH_DATA_SUCCEEDED";
+export const FETCH_DATA_FAILED = "SIMPLE#FETCH_DATA_FAILED";
