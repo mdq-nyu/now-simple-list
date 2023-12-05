@@ -16,7 +16,8 @@
   "module": "src/index.js",
   "scripts": {
     "format": "prettier . --write",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "ci": "prettier . --check && eslint src"
   },
   "dependencies": {
     "@servicenow/ui-core": "quebec",
