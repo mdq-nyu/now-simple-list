@@ -15,14 +15,16 @@ const actions = {
 
 		dispatch(FETCH_DATA, {
 			table: table,
-			fields: fields.join(","),
+			sysparm_fields: fields.join(","),
+			sysparm_limt: "100",
 		});
 	},
 	[FETCH_DATA]: createHttpEffect("/api/now/table/:table", {
 		method: "GET",
 		pathParams: ["table"],
+		queryParams: ["sysparm_limit", "sysparm_fields"],
 		successActionType: FETCH_DATA_SUCCEEDED,
-		// errorActionType: FETCH_DATA_FAILED,
+		errorActionType: FETCH_DATA_FAILED,
 	}),
 	[FETCH_DATA_SUCCEEDED]: ({ action }) => {
 		console.log(`FETCH_DATA_SUCCEEDED: ${JSON.stringify(action)}`);
