@@ -10,7 +10,6 @@
         "category": "primitives"
       },
       "properties": [
-        // need a table name
         {
           "name": "table",
           "label": "Table",
@@ -18,7 +17,6 @@
           "required": true,
           "description": "The tablet hat we will be listing data from"
         },
-        // need a list of fields
         {
           "name": "fields",
           "label": "Fields",
