@@ -8,7 +8,29 @@
         "icon": "document-outline",
         "description": "A description of my component",
         "category": "primitives"
-      }
+      },
+      "properties": [
+        // need a table name
+        {
+          "name": "table",
+          "label": "Table",
+          "fieldType": "string",
+          "required": true,
+          "description": "The tablet hat we will be listing data from"
+        },
+        // need a list of fields
+        {
+          "name": "fields",
+          "label": "Fields",
+          "fieldType": "json",
+          "typeMetadata": {
+            "schema": {
+              "type": "array",
+              "items": "string"
+            }
+          }
+        }
+      ]
     }
   },
   "scopeName": "x_729992_now_sim_3"
